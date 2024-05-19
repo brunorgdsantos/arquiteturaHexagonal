@@ -1,6 +1,7 @@
 package com.cursoArqHexagonal.Hexagonal.adapters.in.controller.mapper;
 
 import com.cursoArqHexagonal.Hexagonal.adapters.in.controller.request.CustomerRequest;
+import com.cursoArqHexagonal.Hexagonal.adapters.in.controller.response.CustomerResponse;
 import com.cursoArqHexagonal.Hexagonal.application.core.domain.Customer;
 import org.hibernate.id.uuid.CustomVersionOneStrategy;
 import org.mapstruct.Mapper;
@@ -13,4 +14,6 @@ public interface CustomerMapper {
     @Mapping(target = "address", ignore = true)
     @Mapping(target = "isValidCpf", ignore = true)
     Customer toCustomer(CustomerRequest customerRequest);
+
+    CustomerResponse toCustomerResponse(Customer customer);
 }
