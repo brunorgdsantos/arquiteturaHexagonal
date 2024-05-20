@@ -12,5 +12,5 @@ public class CustomerRequest {
     private String cpf;
 
     @NotBlank
-    private String zip;
+    private String zipCode;
 }
