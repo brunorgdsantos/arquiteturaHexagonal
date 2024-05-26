@@ -1,11 +1,6 @@
 server:
   port: 8081
 
-arantes:
-  client:
-    address:
-      url: http://localhost:8082/addresses
-
 spring:
     data:
       mongodb:
@@ -15,3 +10,8 @@ spring:
         username: root
         password: example
         database: hexagonal
+
+arantes:
+  client:
+    address:
+      url: http://localhost:8082/addresses

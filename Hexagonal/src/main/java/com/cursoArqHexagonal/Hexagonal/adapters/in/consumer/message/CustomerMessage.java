@@ -17,5 +17,5 @@ public class CustomerMessage {
 
     private String cpf;
 
-    private Boolean isValid;
+    private Boolean isValidCpf;
 }

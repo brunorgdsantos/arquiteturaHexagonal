@@ -5,10 +5,11 @@ import com.cursoArqHexagonal.Hexagonal.application.core.domain.Address;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.cloud.openfeign.FeignContext;
 
 @FeignClient(
         name = "FindAddressByZipCodeClient",
-        url = "${arantes.cliente.address.url}"
+        url = "${arantes.client.address.url}"
 )
 public interface FindAddressByZipCodeClient {
     @GetMapping("/{zipCode}")
