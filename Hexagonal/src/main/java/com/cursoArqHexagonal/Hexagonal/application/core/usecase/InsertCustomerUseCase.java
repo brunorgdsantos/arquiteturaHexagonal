@@ -1,5 +1,6 @@
 package com.cursoArqHexagonal.Hexagonal.application.core.usecase;
 
+import com.cursoArqHexagonal.Hexagonal.application.core.domain.Address;
 import com.cursoArqHexagonal.Hexagonal.application.core.domain.Customer;
 import com.cursoArqHexagonal.Hexagonal.application.ports.in.InsertCustomerInputPort;
 import com.cursoArqHexagonal.Hexagonal.application.ports.out.FindAddressByZipCodeOutputPort;
